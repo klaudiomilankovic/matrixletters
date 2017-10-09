@@ -1,0 +1,129 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: #272822;
+    display: flex;
+    flex-wrap: wrap;
+    color: #66D9EF;
+}
+
+.letter {
+    font-size: 4rem;
+    text-transform: uppercase;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    transition: 1s ease-in-out;
+    margin: 3px;
+}
+
+    .letter:before {
+        content: attr(data-letter) !important;
+        font-size: 4rem;
+        animation: alternate-letters 5s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+.stop-animation {
+    background: transparent;
+}
+
+.animation-finished:not(.stop-animation) {
+    background: #66D9EF;
+}
+
+.stop-animation:before {
+    .color: #fff;
+}
+
+
+@keyframes alternate-letters {
+    0% {
+        content: "A";
+    }
+    3.7% {
+        content: "B";
+    }
+    7.4% {
+        content: "C";
+    }
+    11.1% {
+        content: "D";
+    }
+    14.8% {
+        content: "E";
+    }
+    18.5% {
+        content: "F";
+    }
+    22.2% {
+        content: "G";
+    }
+    25.9% {
+        content: "H";
+    }
+    29.6% {
+        content: "I";
+    }
+    33.3% {
+        content: "J";
+    }
+    37% {
+        content: "K";
+    }
+    40.7% {
+        content: "L";
+    }
+    44.4% {
+        content: "M";
+    }
+    48.1% {
+        content: "N";
+    }
+    51.8% {
+        content: "O";
+    }
+    55.5% {
+        content: "P";
+    }
+    59.2% {
+        content: "Q";
+    }
+    62.9% {
+        content: "R";
+    }
+    66.6% {
+        content: "S";
+    }
+    70.3% {
+        content: "T";
+    }
+    74% {
+        content: "U";
+    }
+    77.7% {
+        content: "V";
+    }
+    81.4% {
+        content: "W";
+    }
+    85.1% {
+        content: "X";
+    }
+    88.8%  {
+        content: "Y";
+    }
+    92.5% {
+        content: "Z";
+    }
+    96.2% {
+        content: "B";
+    }
+    100% {
+        background: #66d9ef !important;
+    }
+
+}
+
