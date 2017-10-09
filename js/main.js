@@ -3,8 +3,8 @@ const windowWidth = window.innerWidth;
 const windowHeight = window.innerHeight;
 
 
-let lettersInRow = Math.floor(windowWidth / 62);
-let lettersInCol = Math.floor(windowHeight / 62);
+let lettersInRow = Math.floor(windowWidth / 56);
+let lettersInCol = Math.floor(windowHeight / 56);
 
 let lettersInViewport = lettersInRow * lettersInCol;
 
@@ -50,6 +50,7 @@ function onAfterAnimation() {
 }
 
 let allElements = document.querySelectorAll('.letter');
+//Listening when animation stops
 allElements.forEach(letter => {
     letter.addEventListener("animationend", onAfterAnimation, false);
 });
@@ -61,3 +62,4 @@ console.log(lettersInViewport, 'Total Letters in Viewport');
 console.log(letterToUpdate, 'Letter to update');
 console.log(gridCenter,'Grid Center');
 console.log(allElements, "All elements");
+console.log(wordLengthCenter, "Word Length Center");
