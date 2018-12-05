@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     color: #66D9EF;
+    margin: 0 auto;
 }
 
 .letter {
